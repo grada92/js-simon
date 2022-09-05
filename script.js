@@ -12,4 +12,15 @@ console.log('JS OK')
 
 const listnumbers = document.getElementById('number');
 
-const myArray = [];
+const array = [];
+
+while (array.length < 5) {
+    
+    const numRandom = Math.floor(Math.random() * 100 + 1);
+
+    if (!myArray.includes(numRandom)) {
+
+        myArray.push(numRandom);
+
+    }
+}
