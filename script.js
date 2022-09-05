@@ -10,7 +10,7 @@ da indovinare sono stati individuati.
 
 console.log('JS OK')
 
-const listnumbers = document.getElementById('number');
+const listnumbers = document.getElementById('Number');
 
 const array = [];
 
@@ -18,9 +18,19 @@ while (array.length < 5) {
     
     const numRandom = Math.floor(Math.random() * 100 + 1);
 
-    if (!myArray.includes(numRandom)) {
+    if (!array.includes(numRandom)) {
 
-        myArray.push(numRandom);
+        array.push(numRandom);
 
     }
 }
+
+console.log(array);
+
+listnumbers.innerHTML = array;
+
+const reset = setTimeout(function() {
+
+    listaNumeri.innerHTML = '';
+
+}, 3000 );
